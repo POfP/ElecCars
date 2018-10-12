@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElecCarApiApp", "ElecCarApiApp\ElecCarApiApp.csproj", "{C5A88BCD-47FA-41A8-A69C-54A59FF42623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElecCarApiApp", "ElecCarApiApp\ElecCarApiApp.csproj", "{C5A88BCD-47FA-41A8-A69C-54A59FF42623}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIClass", "DIClass\DIClass.csproj", "{E94BB156-435B-439B-B01B-992237A6F6B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElecCarWebApp", "ElecCarWebApp\ElecCarWebApp.csproj", "{F3E66DDA-44F1-411F-9B06-419E280E6B2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C5A88BCD-47FA-41A8-A69C-54A59FF42623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5A88BCD-47FA-41A8-A69C-54A59FF42623}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5A88BCD-47FA-41A8-A69C-54A59FF42623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E94BB156-435B-439B-B01B-992237A6F6B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E94BB156-435B-439B-B01B-992237A6F6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E94BB156-435B-439B-B01B-992237A6F6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E94BB156-435B-439B-B01B-992237A6F6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E66DDA-44F1-411F-9B06-419E280E6B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E66DDA-44F1-411F-9B06-419E280E6B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E66DDA-44F1-411F-9B06-419E280E6B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E66DDA-44F1-411F-9B06-419E280E6B2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

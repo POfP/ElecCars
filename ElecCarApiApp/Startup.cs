@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DIClass;
 using ElecCarApiApp.Helper;
 using ElecCarApiApp.Models;
 using ElecCarApiApp.Services;
@@ -54,6 +55,9 @@ namespace ElecCarApiApp
 
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
+            services.AddSingleton<IConfiguration>(Configuration);
+            services.AddTransient<IMyDependency, MyDependency>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -71,6 +75,7 @@ namespace ElecCarApiApp
                 b.MapODataServiceRoute("odata", "odata", GetEdmModel());
                 b.Select().Expand().Filter().OrderBy().MaxTop(100).Count();
             });
+
         }
 
       

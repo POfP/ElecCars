@@ -6,6 +6,8 @@ using ElecCarApiApp.Models;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using DIClass;
 
 namespace ElecCarApiApp.Controllers
 {
@@ -13,12 +15,19 @@ namespace ElecCarApiApp.Controllers
     public class CarsController : ODataController
     {
 
+        private readonly IConfiguration configuration;
 
         private ElecCarContext _db;
+        private IMyDependency _myDependency;
 
-        public CarsController(ElecCarContext context)
+        public CarsController(ElecCarContext context, IMyDependency myDependency,  IConfiguration config)
         {
+            configuration = config;
+            _myDependency = myDependency;
             _db = context;
+
+            myDependency.WriteMessage("shdfghsdgf");
+
              if (context.Cars.Count() == 0)
             {
                 foreach (var b in DataSource.GetCars())
